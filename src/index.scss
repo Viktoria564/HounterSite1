@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+input,
+textarea {
+  outline: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #fff;
+  color: #626687;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    max-width: 1220px;
+    padding: 0 10px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.text {
+  opacity: 0.75;
+
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F59E0B;
+  text-transform: capitalize;
+
+  &::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background-color: #F59E0B;
+    display: inline-block;
+    margin-right: 3px;
+  }
+}
+
+.title {
+  padding-left: 34px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #1B1C57;
+
+  @media screen and (max-width: 576px) {
+    font-size: 25px;
+  }
+}
+
+.button {
+  background-color: #10B981;
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: box-shadow 0.5s, color 0.5s, background-color 0.5s, border-color 0.5s;
+
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+  }
+
+
+  &:hover {
+    color: #047857;
+    background-color: #D1FAE5;
+  }
+
+  &:focus {
+    border-color: #047857;
+  }
+
+  &:active {
+    box-shadow: inset 0px 7px 4px rgba(0, 0, 0, 0.25)
+  }
+}

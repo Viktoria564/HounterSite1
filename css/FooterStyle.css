@@ -1,0 +1,100 @@
+.footer {
+  background-image: url("../images/footer_spot-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  padding-bottom: 127px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+}
+.footer__box-info {
+  max-width: 320px;
+}
+.footer__logo {
+  margin-bottom: 16px;
+}
+.footer__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #626687;
+  margin-bottom: 24px;
+}
+.footer__social-list {
+  display: flex;
+  align-items: center;
+}
+.footer__social-item:not(:last-child) {
+  margin-right: 24px;
+}
+.footer__social-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+.footer__social-link:hover {
+  opacity: 0.6;
+}
+.footer__social-link:focus {
+  border-color: #3C4563;
+}
+.footer__social-link:active {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+}
+.footer__box-links {
+  display: flex;
+}
+.footer__property-list {
+  margin-right: 87px;
+}
+.footer__property-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.footer__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0E1735;
+  padding-bottom: 6px;
+}
+.footer__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #888B97;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 2px;
+  transition: color 0.5s, box-shadow 0.5s, border-color 0.5s;
+}
+.footer__link:hover {
+  color: #0E1735;
+}
+.footer__link:active {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+}
+.footer__link:focus {
+  border-color: #0E1735;
+}
+.footer__article-list {
+  margin-right: 84px;
+}
+.footer__article-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.address {
+  font-style: normal;
+}
+.address .footer__title {
+  margin-bottom: 16px;
+}
+.address__item:not(:last-child) {
+  margin-bottom: 16px;
+}/*# sourceMappingURL=FooterStyle.css.map */

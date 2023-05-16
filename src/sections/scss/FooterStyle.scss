@@ -1,0 +1,150 @@
+.footer {
+  background-image: url('../../images/footer_spot-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  padding-bottom: 127px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-bottom: 40px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+
+    @media screen and (max-width: 992px) {
+      flex-flow: wrap;
+    }
+  }
+
+  &__box-info {
+    max-width: 320px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #626687;
+    margin-bottom: 24px;
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__social-link {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: opacity 0.5s, box-shadow 0.5s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      border-color: #3C4563;
+    }
+
+    &:active {
+      box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__box-links {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__property-list {
+    margin-right: 88px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__property-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0E1735;
+    padding-bottom: 9px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 18px;
+    color: #888B97;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px;
+    transition: color 0.5s, box-shadow 0.5s, border-color 0.5s;
+
+    &:hover {
+      color: #0E1735;
+    }
+
+    &:active {
+      box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+      border-color: #0E1735;
+    }
+  }
+
+  &__article-list {
+    margin-right: 72px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__article-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.address {
+  font-style: normal;
+
+  .footer__title {
+    margin-bottom: 10px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}

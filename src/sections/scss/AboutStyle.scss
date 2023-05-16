@@ -1,0 +1,346 @@
+.about {
+  position: relative;
+  padding-bottom: 120px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-bottom: 40px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 27%;
+    top: -50%;
+    right: 0;
+    z-index: -1;
+    height: 135%;
+    background-image: url('../../images/about_spot-bg.png');
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 1200px) {
+      top: -25%;
+      height: 60%;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 50%;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    padding-left: 34px;
+
+    @media screen and (max-width: 576px) {
+      padding-left: 0;
+    }
+  }
+
+  &__info {
+    max-width: 525px;
+    padding: 27px 0 27px 0;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 300px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__subtitle {
+    padding-left: 0;
+    margin-bottom: 12px;
+    display: flex;
+
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__title {
+    padding-left: 0;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title-list {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1B1C57;
+    opacity: 0.75;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 53px;
+    grid-row-gap: 16px;
+    margin-bottom: 28px;
+    max-width: 448px;
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 15px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__text-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #3C4563;
+    display: inline-flex;
+    align-items: center;
+
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 24px;
+      height: 24px;
+      margin-right: 22px;
+    }
+
+    &--bath::before {
+      background-image: url('../../images/icons/icon-bath.svg');
+    }
+
+    &--car::before {
+      background-image: url('../../images/icons/icon-car.svg');
+    }
+
+    &--bed::before {
+      background-image: url('../../images/icons/icon-bed.svg');
+    }
+
+    &--floor::before {
+      background-image: url('../../images/icons/icon-floor.svg');
+    }
+  }
+
+  &__line {
+    width: 400px;
+    height: 2px;
+    display: block;
+    background-color: #F0F3FD;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 15px;
+      width: 300px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__contact-img {
+    margin-right: 24px;
+
+    @media screen and (max-width: 576px) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__contact-box {
+    max-width: 140px;
+    margin-right: 57px;
+    font-weight: 500;
+    line-height: 24px;
+
+    @media screen and (max-width: 576px) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__contact-name {
+    display: block;
+    font-size: 18px;
+    color: #0E1735;
+
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+    }
+  }
+
+  &__contact-position {
+    font-size: 16px;
+    color: #888B97;
+
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  &__contact-btn {
+    display: flex;
+    align-items: center;
+    padding: 11px 16px;
+
+    @media screen and (max-width: 576px) {
+      padding: 9px 9px;
+    }
+
+    &:hover {
+      .about__contact-svg * {
+        fill: #10B981;
+      }
+    }
+  }
+
+  &__contact-svg * {
+    transition: fill 0.5s;
+  }
+
+  &__contact-svg {
+    margin-right: 16px;
+  }
+
+  &__gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 456px;
+
+    @media screen and (max-width: 576px) {
+      height: 310px;
+    }
+
+    @media screen and (max-width: 340px) {
+      height: 270px;
+    }
+  }
+
+  &__gallery-link {
+    background-image: url('../../images/gallery/img-1.jpg');
+    background-repeat: no-repeat;
+    height: 416px;
+    width: 494px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 576px) {
+      height: 270px;
+      width: 348px;
+      background-size: 348px 270px;
+    }
+
+    @media screen and (max-width: 340px) {
+      height: 230px;
+      width: 308px;
+      background-size: 348px 270px;
+    }
+
+    &:hover::before {
+      width: 60px;
+      height: 60px;
+    }
+
+    &::before {
+      content: '';
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(2.5px);
+      transition: width 0.5s, height 0.5s;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../../images/icons/icon-play.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 15px;
+      height: 22px;
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+  }
+
+  &__slide {
+    display: flex;
+  }
+
+  .swiper {
+    width: 375px;
+    height: 100%;
+
+    @media screen and (max-width: 576px) {
+      width: 325px;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 305px;
+    }
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 96px;
+    height: 80px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
